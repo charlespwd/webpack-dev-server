@@ -47,7 +47,7 @@ BUILD_RESULTS=$?
 
 # move project files as specified by project.json to prepare for compression
 mkdir -p build
-cp lib ssl client bin build
+cp -R lib ssl client bin build
 
 # Matching structure of regular `setup.py`ed Python packages, having a root
 # folder level describing package-version.
